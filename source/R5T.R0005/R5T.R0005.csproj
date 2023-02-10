@@ -11,6 +11,15 @@
     <PackageReference Include="Microsoft.AspNetCore.Components.Web" Version="6.0.11" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\..\..\R5T.R0006\source\R5T.R0006\R5T.R0006.csproj" />
+    <ProjectReference Include="..\..\..\R5T.T0131\source\R5T.T0131\R5T.T0131.csproj" />
     <ProjectReference Include="..\..\..\R5T.T0154\source\R5T.T0154\R5T.T0154.csproj" />
+    <ProjectReference Include="..\..\..\R5T.T0157\source\R5T.T0157\R5T.T0157.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Update="tailwind.contentpaths.json">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>Never</CopyToPublishDirectory>
+    </Content>
   </ItemGroup>
 </Project>

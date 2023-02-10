@@ -1,0 +1,31 @@
+@*Namespace specified in directory-level _Imports.razor.*@
+
+@inherits R0006.Inputs.InputTextBase
+
+
+<div>
+  <label class="block text-sm font-medium text-gray-700">@this.Label</label>
+  <div class="mt-1">
+    <InputText
+        Disabled=@this.Disabled
+        OnEnter=@this.OnEnter
+        Value=@this.Value
+        ValueChanged=@this.ValueChanged
+        Placeholder=@this.Placeholder
+    />
+  </div>
+  <p class="mt-2 text-sm text-gray-500">@this.Help</p>
+</div>
+
+
+
+@code{
+    /// <summary>
+    /// The label for the input.
+    /// </summary>
+    [Parameter]
+    public string Label { get; set; }
+
+    [Parameter]
+    public string Help { get; set; }
+}

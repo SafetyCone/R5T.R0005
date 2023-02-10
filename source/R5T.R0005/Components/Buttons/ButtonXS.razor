@@ -1,0 +1,17 @@
+@*Namespace specified in directory-level _Imports.razor.*@
+
+@inherits R0006.Buttons.ButtonBase
+
+
+<Button
+    Disabled=this.Disabled
+    SizeCssSociety="@(ButtonSizes.Instance.Button_Size_XS)"
+    ColorCssSociety="@this.ColorCssSociety"
+    OnClick="this.OnClick"
+>
+    @this.ChildContent
+</Button>
+
+@code{
+
+}

@@ -1,5 +1,4 @@
 [
-    "./Components/**/*.razor",
-    "./Pages/**/*.razor",
-    "./wwwroot/**/*.html"
+  "./Components/**/*.razor",
+  "./Code/Values/**/*.cs"
 ]

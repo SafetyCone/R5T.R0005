@@ -1,13 +1,15 @@
 @*Namespace specified in directory-level _Imports.razor.*@
 
-<div class="mx-auto max-w-7xl sm:px-6 lg:px-8">
-    @this.ChildContent
+<div class="overflow-hidden rounded-lg bg-white shadow">
+    <div class="px-4 py-5 sm:p-6">
+        @this.ChildContent
+    </div>
 </div>
 
 
 @code{
     /// <summary>
-    /// The content within the container.
+    /// The content within the card.
     /// </summary>
     [Parameter]
     public RenderFragment ChildContent { get; set; }
